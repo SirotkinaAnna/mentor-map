@@ -1,13 +1,72 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+div {
+    font-family: 'Rubik', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.my-text {
+    color: hsl(0, 0%, 59%);
+    font-size: smaller;
+}
+
+.search-bar {
+    height: 280px;
+    background-image: url('./images/pattern-bg-desktop.png');
+    background-size: cover;
+    width: 100%;
+}
+
+.myInput {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    cursor: pointer;
+}
+
+.myButton {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.mapContainer {
+    position: relative;
+    z-index: 0;
+    height: 80vh;
+}
+
+.myRow {
+    position: absolute;
+    z-index: 1000;
+    color: black;
+
+    width: 70%;
+    left: 15%;
+
+}
+
+footer {
+    font-size: smaller;
+}
+
+.myDiv {
+    display: block;
+    border-right: 1px solid #ced4da;
+    height: 85%;
+}
+
+@media (max-width: 800px) {
+    .myRow {
+        width: 90%;
+        left: 5%;
+    }
+
+    .myDiv {
+        display: none;
+    }
+
+    .mapContainer {
+        height: 100vh;
+    }
+
+    .search-bar {
+        background-image: url('./images/pattern-bg-mobile.png');
+
+    }
 }
