@@ -34,8 +34,8 @@ function App() {
     }, [])
 
     useEffect(() => {
-        const lat = search.lat || 43.4256055;
-        const lng = search.lng || -80.322739;
+        const lat = search.lat || 34.04915;
+        const lng = search.lng || -118.09462;
         setLatLan([lat, lng]);
     }, [search.lat, search.lng])
 
