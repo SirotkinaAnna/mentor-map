@@ -33,7 +33,7 @@ function SearchBar({ ip }) {
                 <form onSubmit={handleSubmit}>
                     <div className="input-group">
                         <input className="myInput form-control py-3 px-4" type="text" onChange={handleChange} value={searchTerm} placeholder="Search for any IP address or Domain" />
-                        <button className="myButton btn btn-dark px-4 fs-5" type="button" id="button" onClick={handleSubmit}><GoChevronRight /></button>
+                        <button className="myButton btn btn-dark px-4 fs-5" type="button" id="button" onClick={handleSubmit}><span className="d-none">Search</span><GoChevronRight /></button>
                     </div>
                 </form>
             </div>

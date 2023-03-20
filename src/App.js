@@ -42,10 +42,7 @@ function App() {
     return <div role="main">
         <SearchBar ip={ip} />
         <MapComponent position={myLatLan} search={search} />
-        <footer className="">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>.
-            Coded by <a href="https://github.com/SirotkinaAnna">Anna Sirotkina</a>.
-        </footer>
+
     </div>
 }
 export default App;
